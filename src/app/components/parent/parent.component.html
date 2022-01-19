@@ -1,0 +1,7 @@
+<div style="background-color: rgb(81, 165, 42);">
+    <h2>Parent</h2>
+    <div [innerHtml]="text"></div>
+    <input type="text" [(ngModel)]="inputText" name="" id="">
+    <button (click)="toggleChild()">Toggle Child</button>
+    <app-child *ngIf="isChild" [inputText]="inputText"></app-child>
+</div>
